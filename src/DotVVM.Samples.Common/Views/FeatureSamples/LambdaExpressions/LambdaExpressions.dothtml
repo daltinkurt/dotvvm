@@ -30,6 +30,17 @@
                         Click="{command: SetResult(Enumerable.Where(Array, (int item) => item % 2 == 1))}" />
             <dot:Button Text="Negate numbers" Validation.Enabled="false"
                         Click="{command: SetResult(Enumerable.Select(Array, (int item) => -item))}" />
+
+            <dot:Button Text="Get first number" Validation.Enabled="false"
+                        Click="{command: SetResult(Enumerable.FirstOrDefault(Array))}" />
+            <dot:Button Text="Get last number" Validation.Enabled="false"
+                        Click="{command: SetResult(Enumerable.LastOrDefault(Array))}" />
+            <dot:Button Text="Take first 5 numbers" Validation.Enabled="false"
+                        Click="{command: SetResult(Enumerable.Take(Array, 5))}" />
+            <dot:Button Text="Skip first 5 numbers" Validation.Enabled="false"
+                        Click="{command: SetResult(Enumerable.Skip(Array, 5))}" />
+            <dot:Button Text="Concat with current result" Validation.Enabled="false"
+                        Click="{command: SetResult(Enumerable.Concat(Array, Result))}" />
         </div>
 
         <div>

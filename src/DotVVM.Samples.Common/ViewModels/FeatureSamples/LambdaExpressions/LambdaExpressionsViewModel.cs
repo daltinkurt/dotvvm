@@ -16,5 +16,10 @@ namespace DotVVM.Samples.Common.ViewModels.FeatureSamples.LambdaExpressions
         {
             Result = newResult.ToArray();
         }
+
+        public void SetResult(int number)
+        {
+            Result = new[] { number };
+        }
     }
 }
